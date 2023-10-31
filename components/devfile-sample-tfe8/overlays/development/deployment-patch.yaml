@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tfe8
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci1t-43256-0091-tenant/ci1t-43256-0091-app/devfile-sample-tfe8@sha256:ed05afa123d96d4d8b4fdb02cf09e0d31a34f909e8bbdd221214f2b481a15350
+        name: my-nodejs
+        resources: {}
+status: {}
